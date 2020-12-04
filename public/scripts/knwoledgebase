@@ -1,0 +1,35 @@
+sudo npm install -g babel-cli@6.24.1
+
+//installing presets
+yarn init // in your project folder
+
+yarn add babel-preset-react@6.24.1
+yarn add babel-preset-env@1.5.2
+
+// running the babel command
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
+// Extension Install - babel ES6/ES7
+
+// Creating a JSX
+let template2 = (
+    <div>
+        <h1>Mriganka Paul</h1>
+        <p>Age: 27</p>
+        <p>Location: Mississauga</p>
+    </div>
+)
+const appRoot = document.getElementById("app");
+ReactDOM.render(template2, appRoot);
+
+
+React DOM elements - documentation
+Rect DOM events - documentation
+
+// Debugger
+Chrome React Dev Tools - Install and restart chrome
+
+// life cycle methods are not available for stateless functional components
+
+React life cycle - dcoumentation
