@@ -1,3 +1,15 @@
+yarnpkg.com
+npm install -g yarn
+yarn --version
+
+emit plugin for html
+
+// To install live-server
+
+yarn global add live-server
+live-server --version
+yarn install --checkfiles
+
 sudo npm install -g babel-cli@6.24.1
 
 //installing presets
@@ -5,6 +17,9 @@ yarn init // in your project folder
 
 yarn add babel-preset-react@6.24.1
 yarn add babel-preset-env@1.5.2
+
+// To recreate the node-modules in yarn 
+yarn install --check-files
 
 // running the babel command
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
@@ -33,3 +48,10 @@ Chrome React Dev Tools - Install and restart chrome
 // life cycle methods are not available for stateless functional components
 
 React life cycle - dcoumentation
+
+// Webpack 
+
+yarn global remove babel-cli live-server
+
+yarn add live-server babel-cli@6.24.1
+
